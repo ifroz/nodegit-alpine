@@ -8,7 +8,7 @@ This image uses the [node:alpine](https://hub.docker.com/_/node/) as a base imag
 ## Build
 
 ```bash
-git clone git@github.com:Pet3rMatta/nodegit-alpine.git
+git clone git@github.com:ifroz/nodegit-alpine.git
 cd nodegit-alpine
 docker build --tag nodegit-alpine .
 ```
@@ -17,7 +17,7 @@ docker build --tag nodegit-alpine .
 
 ## Usage
 
-* `docker pull docker pull pet3rmatta/nodegit-alpine` - Pull from the repository.
+* `docker pull docker pull ifroz/nodegit-alpine` - Pull from the repository.
 * `FROM nodegit-alpine` - Simply build your image.
 * `WORKDIR /srv` - The working directory is set to `/srv/`, so that is the directory, where the `nodegit` is installed.
 * It is important, that you do not install your own `nodegit` package, so it won't override the preinstalled one. For example, you could install the `nodegit` as the dev dependency as `npm install --save-dev` and in the Dockerfile install the dependencies with `npm install --only={production}` command.
