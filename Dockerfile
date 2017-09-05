@@ -10,4 +10,3 @@ RUN apk update && \
 
 RUN apk del python tzdata pkgconfig build-base && \
     rm -rf /tmp/* /var/cache/apk/*
-
